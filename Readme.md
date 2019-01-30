@@ -16,7 +16,6 @@
    コード直書きで横着してるけどそこは運用でカバー
 
 1. mackerelにホスト情報を投げるとmackerel上のホストIDが返却されるのでメモしておきます。
-
 1. send_mackerel_host_metric.shに今回のホスト情報行を追加します。
 
     eval ${CMD} "'$(./sv_res.py -i メモしたmackerel上のホストID -a ESXiに付けたホスト名 -s ESXiサーバにログインする為のDNSで解決できるホスト名 -u ESXi上のユーザ名 -p ユーザのログインパスワード)'" &
