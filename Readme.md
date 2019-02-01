@@ -30,6 +30,9 @@
 
     eval ${CMD} "'$(./sv_res.py -i メモしたmackerel上のホストID -a ESXiに付けたホスト名 -s ESXiサーバにログインする為のDNSで解決できるホスト名 -u ESXi上のユーザ名 -p ユーザのログインパスワード)'" &
 
+    ex)
+    eval ${CMD} "'$(./sv_res.py -i ******** -a esxi-product -s esxi-product.example.com -u user_name -p password)'" &
+
    ※ 最後に '&' を付けてバックグラウンド実行にしないと、複数サーバを登録した時に時間が掛り過ぎてしまうので注意する事
 
 1. 変更したsend_mackerel_host_metric.shをcronで毎分実行に設定して様子をみます。
