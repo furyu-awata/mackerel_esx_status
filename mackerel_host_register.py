@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#! /usr/bin/python3
 # vim: set ts=4 sw=4 sts=0 fileencoding=utf-8 ff=unix :
 
 from pyVim.connect import SmartConnect, Disconnect
@@ -125,7 +125,7 @@ def main():
     result_json["meta"]["block_device"] = {}
     result_json["meta"]["filesystem"] = {}
 
-    print json.dumps(result_json)
+    print(json.dumps(result_json))
     return(0)
 
 # ここからはじまる
